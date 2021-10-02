@@ -3,9 +3,12 @@ class Car {
     const img = document.createElement('img');
     img.onload = () => {
       this.img = img;
-
+      
       const imgRatio = img.naturalWidth/img.naturalHeight;
-
+      this.x = x;
+      this.y =y;
+      this.w = 100;
+      this.h = imgRatio * this.w;
       // TODO
     }
     img.src = "images/car.png";
